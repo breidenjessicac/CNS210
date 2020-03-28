@@ -11,7 +11,7 @@ How many terms? 12
 #validate the # of terms
 if nterms <=0:
     print("Please enter a positive number")
-else
+else:
     print("Fibbionacci sequence :")
     for 1 in range(nterms):
         print(recur_fibo(i))
