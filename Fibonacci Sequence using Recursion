@@ -1,31 +1,24 @@
-def recur_fibo(n):
-if n<=1
-	return n
-else:
-    return(recur_fibo(n-1) + recur_fibo(n-2)) 
-End    
+f = open("Fibonnacci Sequence- Recursion.py", "w")
+
+
+def FibRecursion(n):
+	if n <= 1:
+		return n
+	else:
+		return(FibRecursion(n-1) + FibRecursion(n-2))
+     	
 
 #take user input
-nterms = int(input("How many terms? "))
-How many terms? 12
-#validate the # of terms
-if nterms <=0:
-    print("Please enter a positive number")
-else:
-    print("Fibbionacci sequence :")
-    for 1 in range(nterms):
-        print(recur_fibo(i))
-End
+nterms = int(input("Enter the number of terms? "))
 
-Fibonacci Sequence
-0
-1
-2
-3
-5
-8
-13
-21
-34
-55
-89
+#validate user input	
+if nterms <=0: 
+	print("Please enter a positive integer")
+else:
+	print("Fibonacci sequence: ")
+	for i in range(nterms):
+		print(FibRecursion(i))
+
+f = open("Fibonacci Sequence- Recursion.py", "r")
+print(f.read())
+
