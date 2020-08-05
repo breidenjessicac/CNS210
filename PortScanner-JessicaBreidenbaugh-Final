@@ -25,6 +25,6 @@ try:
     if scanner(portNumber ):
       print('[*] Port', portNumber, '/tcp', 'is open')
     else:
-      print('[*] Port', portNumber, '/tcp', 'is open')
+      print('[*] Port', portNumber, '/tcp', 'is closed')
 finally:
     pass
